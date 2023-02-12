@@ -1,6 +1,8 @@
 #build dlib wheel from source (https://github.com/davisking/dlib) for windows and ubuntu (python 3.11)
 name: dlib
 on:
+  schedule:
+    - cron: "0 0 * * 1"
   push:
     branches: [ main ]
   pull_request:
