@@ -34,9 +34,10 @@ jobs:
           cd dlib
       - name: Build wheel
         run: |
+          cd dlib
           python setup.py bdist_wheel
       - name: Upload wheel
         uses: actions/upload-artifact@v2
         with:
           name: dlib
-          path: dist/*.whl
+          path: dlib/dist/*.whl
