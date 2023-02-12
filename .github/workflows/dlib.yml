@@ -18,20 +18,12 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Install dependencies
+      - name: Update Pip
         run: |
           python -m pip install --upgrade pip
-          pip install wheel
-          pip install setuptools
-          pip install cmake
-          pip install numpy
-          pip install scikit-build
       - name: clone repo
         run: |
           git clone https://github.com/davisking/dlib
-      - name: cd dlib
-        run: |
-          cd dlib
       - name: Build wheel
         run: |
           cd dlib
