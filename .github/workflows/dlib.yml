@@ -1,4 +1,4 @@
-#build dlib for windoww (python 3.11)
+#build dlib for windows and ubuntu (python 3.11)
 name: dlib
 on:
   push:
@@ -25,6 +25,7 @@ jobs:
         with:
           name: dlib
           path: dist/*.whl
+  build-ubuntu:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
