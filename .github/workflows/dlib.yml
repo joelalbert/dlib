@@ -26,7 +26,7 @@ jobs:
           pip install setuptools
       - name: clone repo
         run: |
-          git clone https://github.com/davisking/dlib
+          git clone https://github.com/davisking/dlib/releases/tag/v19.24.6
       - name: Build wheel
         run: |
           cd dlib
