@@ -24,10 +24,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install wheel
           pip install setuptools
-      - name: clone repo
+      - name: Clone repo
         run: |
           git clone https://github.com/davisking/dlib
-          git checkout 986889d
+          git checkout tags/v19.24.6
       - name: Build wheel
         run: |
           cd dlib
