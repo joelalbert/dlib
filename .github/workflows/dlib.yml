@@ -12,7 +12,7 @@ jobs:
     strategy:
       matrix:
         os: [windows-latest]
-        python-version: ["3.13"]
+        python-version: ["3.14"]
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python ${{ matrix.python-version }}
@@ -26,7 +26,7 @@ jobs:
           pip install setuptools
       - name: Clone repo
         run: |
-          git clone --branch v19.24.6 https://github.com/davisking/dlib
+          git clone --branch v20.0 https://github.com/davisking/dlib
       - name: Build wheel
         run: |
           cd dlib
