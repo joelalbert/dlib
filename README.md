@@ -1,2 +1,2 @@
 # dlib python wheels
-Build dlib wheels for Windows (Python312,313)
+Build dlib wheels for Windows (Python313,314)
